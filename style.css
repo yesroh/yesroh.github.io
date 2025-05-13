@@ -26,7 +26,7 @@ body {
 
 #sidebar ul {
     list-style-type: none;
-    padding-left: 0; /* padding-left를 없애주기 */
+    padding-left: 50px; 
 }
 
 #sidebar li {
