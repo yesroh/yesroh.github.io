@@ -10,14 +10,17 @@ body {
 /* 컨테이너 설정 */
 #container {
     display: flex;
+    height: 100vh; /* 화면 전체 높이로 설정 */
 }
 
 /* 좌측 메뉴 바 */
 #sidebar {
     width: 250px;
     background-color: #f0f0f0; /* 연한 회색 */
-    height: 100vh;
+    height: 100%; /* 화면 높이에 맞게 설정 */
     padding-top: 20px;
+    position: fixed; /* 고정 위치로 설정 */
+    left: 0;
 }
 
 #sidebar ul {
@@ -42,8 +45,9 @@ body {
 
 /* 메인 컨텐츠 영역 */
 #main-content {
-    flex-grow: 1;
+    margin-left: 250px; /* 메뉴 영역 너비만큼 여백 추가 */
     padding: 20px;
+    flex-grow: 1;
 }
 
 h1 {
