@@ -21,7 +21,7 @@ body {
     padding-top: 50px; /* 상단 패딩 */
     padding-left: 50px; /* 내부 항목 왼쪽 패딩 */
     position: fixed; /* 고정 위치로 설정 */
-    left: 50px; /* 메뉴 바 왼쪽 위치 50px로 설정 */
+    left: 0px; /* 메뉴 바 왼쪽 위치 50px로 설정 */
 }
 
 #sidebar ul {
