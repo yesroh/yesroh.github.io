@@ -3,25 +3,25 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: white; /* 배경은 하양 */
-    color: black; /* 기본 텍스트 색상은 검은색 */
+    background-color: white;
+    color: black;
 }
 
 /* 컨테이너 설정 */
 #container {
     display: flex;
-    height: 100vh; /* 화면 전체 높이로 설정 */
+    height: 100vh;
 }
 
 /* 좌측 메뉴 바 */
 #sidebar {
     width: 250px;
-    background-color: #f0f0f0; /* 연한 회색 */
-    height: 100%; /* 화면 높이에 맞게 설정 */
-    padding-top: 50px; /* 상단 패딩 */
-    padding-left: 50px; /* 내부 항목 왼쪽 패딩 */
-    position: fixed; /* 고정 위치로 설정 */
-    left: 0px; /* 메뉴 바 왼쪽 위치 50px로 설정 */
+    background-color: #f0f0f0;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 50px;
+    position: fixed;
+    left: 0;
 }
 
 #sidebar ul {
@@ -35,27 +35,39 @@ body {
 
 #sidebar a {
     text-decoration: none;
-    color: black; /* 링크 색상 */
+    color: black;
     font-size: 18px;
 }
 
-/* 메뉴 항목에 마우스 오버 시 색상 변경 */
 #sidebar a:hover {
-    color: #007BFF; /* 파란색 */
+    color: #007BFF;
 }
 
 /* 메인 컨텐츠 영역 */
 #main-content {
-    margin-left: 300px; /* 메뉴 영역 너비(250px) + 여백(50px)만큼 여백 추가 */
+    margin-left: 300px;
     padding: 20px;
     flex-grow: 1;
 }
 
-h1 {
-    color: #333; /* 제목 색상 */
+/* 자기소개 섹션 */
+.profile {
+    display: flex; /* 수평 배치 */
+    align-items: center; /* 수직 중앙 정렬 */
+    gap: 20px; /* 사진과 텍스트 간격 */
 }
 
-/* 기본 텍스트 스타일 */
+.profile-photo {
+    width: 150px; /* 사진 크기 조정 */
+    height: 150px;
+    border-radius: 50%; /* 원형으로 만들기 */
+    object-fit: cover; /* 이미지 비율 유지 */
+}
+
+h1 {
+    color: #333;
+}
+
 p {
-    color: #666; /* 본문 텍스트 색상 */
+    color: #666;
 }
