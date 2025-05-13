@@ -1,0 +1,56 @@
+/* 전체 레이아웃 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* 배경은 하양 */
+    color: black; /* 기본 텍스트 색상은 검은색 */
+}
+
+/* 컨테이너 설정 */
+#container {
+    display: flex;
+}
+
+/* 좌측 메뉴 바 */
+#sidebar {
+    width: 250px;
+    background-color: #f0f0f0; /* 연한 회색 */
+    height: 100vh;
+    padding-top: 20px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#sidebar li {
+    margin: 15px 0;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: black; /* 링크 색상 */
+    font-size: 18px;
+}
+
+/* 메뉴 항목에 마우스 오버 시 색상 변경 */
+#sidebar a:hover {
+    color: #007BFF; /* 파란색 */
+}
+
+/* 메인 컨텐츠 영역 */
+#main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h1 {
+    color: #333; /* 제목 색상 */
+}
+
+/* 기본 텍스트 스타일 */
+p {
+    color: #666; /* 본문 텍스트 색상 */
+}
