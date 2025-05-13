@@ -19,14 +19,15 @@ body {
     background-color: #f0f0f0;
     height: 100%;
     padding-top: 50px;
-    padding-left: 50px;
+    padding-left: 20px; /* 왼쪽 패딩 수정 */
     position: fixed;
     left: 0;
 }
 
+/* 메뉴 항목 스타일 */
 #sidebar ul {
     list-style-type: none;
-    padding-left: 0; 
+    padding-left: 0;
 }
 
 #sidebar li {
@@ -40,12 +41,12 @@ body {
 }
 
 #sidebar a:hover {
-    color: #007BFF;
+    color: #007BFF; /* 파란색으로 변경 */
 }
 
 /* 메인 컨텐츠 영역 */
 #main-content {
-    margin-left: 300px;
+    margin-left: 300px; /* 메뉴 영역 너비만큼 여백 추가 */
     padding: 20px;
     flex-grow: 1;
 }
@@ -57,7 +58,42 @@ body {
     gap: 20px; /* 사진과 텍스트 간격 */
 }
 
+.profile-photo {
+    width: 150px; /* 사진 크기 */
+    height: 150px;
+    border-radius: 50%; /* 원형 사진 */
+    object-fit: cover; /* 이미지 비율 유지 */
+}
 
+/* 테이블 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 h1 {
     color: #333;
