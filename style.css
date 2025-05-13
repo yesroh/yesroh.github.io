@@ -57,12 +57,7 @@ body {
     gap: 20px; /* 사진과 텍스트 간격 */
 }
 
-.profile-photo {
-    width: 150px; /* 사진 크기 조정 */
-    height: 150px;
-    border-radius: 50%; /* 원형으로 만들기 */
-    object-fit: cover; /* 이미지 비율 유지 */
-}
+
 
 h1 {
     color: #333;
